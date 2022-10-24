@@ -171,6 +171,23 @@ body.light-theme {
   color: var(--title-color);
 }
 
+.about__contact-button {
+    justify-self: center;
+}
+
+.about__contact-section {
+    margin-bottom: .5rem;
+    display: flex;
+    column-gap: .5rem;
+}
+
+.about__contact {
+    display: inline;
+}
+.about__contact :hover {
+    
+}
+
 .light-theme .about__box {
   box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 }
@@ -243,7 +260,7 @@ body.light-theme {
   transition: .4s; /* for light mode animation */
 }
 
-.custom_nav {
+.nav {
   height: var(--header-height);
   display: flex;
   justify-content:  space-between;
@@ -480,7 +497,7 @@ body.light-theme {
   font-size: var(--tiny-font-size);
 }
 .about__description {
-  margin-bottom: 2rem;
+  margin-bottom: 1 rem;
 }
 
 
@@ -519,6 +536,7 @@ body.light-theme {
 .skills__data {
   display: flex;
   column-gap: .5rem;
+  margin-bottom: 2rem;
 }
 
 .skills .bxs-badge-check {
@@ -1045,7 +1063,7 @@ body.light-theme {
     margin-bottom: 3.5rem;
   }
 
-  .custom_nav {
+  .nav {
     height: calc(var(--header-height) + 1rem);
   }
 
@@ -1087,7 +1105,7 @@ body.light-theme {
   }
   .about__description {
     padding: 0rem 4rem 0rem 0rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .skills__container {
