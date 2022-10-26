@@ -25,7 +25,7 @@ $(function() {  // jquery
             target: '.work__card'
         },
         animation: {
-            duration: 300
+            duration: 200
         }
     });
 
