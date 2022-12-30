@@ -112,6 +112,7 @@ button {
 img {
   max-width: 100%;
   height: auto;
+  pointer-events: none;
 }
 
 /*=============== THEME ===============*/
@@ -169,23 +170,6 @@ body.light-theme {
 .light-theme .footer__link,
 .light-theme .footer__copy {
   color: var(--title-color);
-}
-
-.about__contact-button {
-    justify-self: center;
-}
-
-.about__contact-section {
-    margin-bottom: .5rem;
-    display: flex;
-    column-gap: .5rem;
-}
-
-.about__contact {
-    display: inline;
-}
-.about__contact :hover {
-    
 }
 
 .light-theme .about__box {
@@ -457,13 +441,34 @@ body.light-theme {
 
 /*=============== ABOUT ===============*/
 .about__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   row-gap: 2.5rem;
+  justify-items: center;
 }
 
+.about__contact-button:hover {
+    background-color: hsl(var(--second-hue), 8%, 75%);
+    transition: 1s;
+}
+
+.about__contact-section {
+    margin: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    column-gap: .5rem;
+}
+
+.about__contact {
+    display: inline;
+}
+
+
 .about__img {
+    display: block;
   width: 220px;
   border-radius: 1.5rem;
-  justify-self: center;
+  justify-content: center;
 }
 
 .about__data {
@@ -497,7 +502,9 @@ body.light-theme {
   font-size: var(--tiny-font-size);
 }
 .about__description {
+    padding: 1rem 4rem;
   margin-bottom: 1 rem;
+  text-align: center;
 }
 
 
@@ -557,8 +564,9 @@ body.light-theme {
 
 /*=============== SERVICES ===============*/
 .services__container {
-    display: flex;
-  grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
   gap: 1.5rem;
   padding-top: 1rem;   
 }
@@ -567,6 +575,7 @@ body.light-theme {
   background-color: var(--container-color);
   padding: 3rem 1.5rem 1.5rem;
   border-radius: 1rem;
+  width: max-content;
 }
 
 .services__title {
@@ -966,6 +975,10 @@ body.light-theme {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .about__box {
+    text-align: center;
+  }
+
   .skills__box {
     column-gap: 1rem;
   }
@@ -978,8 +991,15 @@ body.light-theme {
     justify-content: center;
   }
 
+  .services__card {
+    max-width: min-content;
+  }
+
   .work__item {
     font-size: var(--small-font-size);
+    max-width: min-content;
+    text-align: center577
+    ;
   }
   .work__filters {
     column-gap: .25rem;
@@ -1003,6 +1023,9 @@ body.light-theme {
   .about__description {
     padding: 0rem 5rem;
   }
+  .about__box {
+    text-align: center;
+  }
 
   .skills__container {
     justify-content: center;
@@ -1014,6 +1037,9 @@ body.light-theme {
   .services__container {
     grid-template-columns: repeat(2, 160px);
     justify-content: center;
+  }
+  .services__card {
+    max-width: min-content;
   }
   .services__modal-content {
     width: 500px;
@@ -1091,12 +1117,12 @@ body.light-theme {
   }
 
   .about__container {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
     align-items: center;
     column-gap: 4rem;
   }
   .about__img {
-    width: 350px;
+    min-width: fit-content;
   }
   .about__data {
     text-align: initial;
@@ -1109,7 +1135,7 @@ body.light-theme {
     padding: 1rem 1.25rem;
   }
   .about__description {
-    padding: 0rem 4rem 0rem 0rem;
+    /* padding: 0rem 4rem 0rem 0rem; */
     margin-bottom: 0.5rem;
   }
 
@@ -1124,6 +1150,7 @@ body.light-theme {
   }
   .services__card {
     padding: 5rem 2rem 1.5rem;
+    max-width: max-content;
   }
 
   .work__container {
