@@ -683,6 +683,10 @@ body.light-theme {
 
 
 /*=============== WORK ===============*/
+#work {
+    margin-bottom: 4rem;
+}
+
 .work__container {
   padding-top: 1rem;
 }
