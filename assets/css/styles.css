@@ -13,13 +13,13 @@
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
   */
-  --first-hue: 250;
-  --sat: 66%;
-  --lig: 75%;
+  --first-hue: 16;
+  --sat: 95%;
+  --lig: 45%;
   --second-hue: 219;
 
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* light: -4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 40%); /* light: -4% */
   /* The number that contains the variable --lig must be subtracted -4% 
      in the variable --first-color-alt. This so that it has a darker tone 
      than the first color 
